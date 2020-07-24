@@ -1,0 +1,103 @@
+// RFS import
+@import "../../node_modules/rfs/stylus.styl";
+
+// Font imports
+@font-face
+   font-family Plateia
+   src url(/fonts/Plateia-Bold.ttf)
+
+@font-face
+   font-family Poppins
+   font-weight 300
+   src url(/fonts/Poppins-Light.ttf)
+   
+@font-face
+   font-family Poppins
+   font-weight 400
+   src url(/fonts/Poppins-Regular.ttf)
+
+@font-face
+   font-family Poppins
+   font-weight 600
+   src url(/fonts/Poppins-SemiBold.ttf)
+
+@font-face
+   font-family Poppins
+   font-weight 700
+   src url(/fonts/Poppins-Bold.ttf)
+
+
+// Color palette
+white = #ffffff
+black = #000000
+lightGrey = #bbbb
+darkGrey = #555
+
+body
+	margin 0
+	padding 0
+	font-family Poppins
+	font-weight 300
+	
+a
+	rfs(1.1rem)
+	text-decoration none
+	color black
+
+img
+	width 100%
+	
+h1, h1 a
+	rfs(2.3rem)
+
+h2, h2 a
+	rfs(1.9rem)
+
+h3, h3 a
+	rfs(1.5rem)
+
+h4, h4 a
+	rfs(1.2rem)
+
+h5, h5 a
+	rfs(0.9rem)
+
+p, p a
+	rfs(0.9rem)
+
+h1, h2, h3, h4, h5, h6
+	margin-top 0
+	margin-bottom 0
+	font-weight 600
+
+input
+	border none
+
+hr
+	width 90%
+	border none
+	padding-top 1.5px
+	background-color lightGrey
+	border-radius 10px
+
+.widthRestriction
+	width 90%
+	margin 0 auto
+
+.center
+	text-align center
+
+.bold
+	font-weight 600
+
+.logoFont
+	font-family 'Plateia'
+
+@import 'partialStylesheets/navigation.styl'
+@import 'partialStylesheets/footer.styl'
+
+@import 'partialStylesheets/loginPage.styl'
+
+@import 'partialStylesheets/productPage.styl'
+
+@import 'partialStylesheets/featuredPages.styl'

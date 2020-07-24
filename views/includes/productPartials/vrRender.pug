@@ -1,0 +1,14 @@
+.productPageVRSliderSection
+	video#VRVideo
+		source(src=media.render)
+	input(type="range" min="0" max="100" value="0" step="5").VRSlider#VRSlider
+	script.
+		var VRVideo = document.getElementById("VRVideo");
+		var VRSlider = document.getElementById("VRSlider");
+
+		VRVideo.onloadedmetadata = function() {
+			var videoDuration = VRVideo.duration;
+			VRSlider.oninput = function() {
+				VRVideo.currentTime = (videoDuration * (this.value/100));
+			};
+		};

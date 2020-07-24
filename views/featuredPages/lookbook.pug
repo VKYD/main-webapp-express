@@ -1,0 +1,33 @@
+html
+	include ../includes/head.pug
+	body
+		include ../includes/commonPartials/navbar.pug
+		#belowTopnavContent
+			.widthRestriction
+				br
+				h1.center The Lookbook
+				br
+				include lookbookPartials/demoCollection.pug
+				//- h2 Pronounced Wick3d
+				//- h4 
+				//- 	| by 
+				//- 	a(href="#") Akshaj Sharma
+				//- br
+				//- .featuredPages-col-4
+				//- 	img(src="/media/featuredPages/lookbook/demoCollection/1.jpg")
+				//- 	img(src="/media/featuredPages/lookbook/demoCollection/3.jpg")
+				//- .featuredPages-col-4
+				//- 	img(src="/media/featuredPages/lookbook/demoCollection/2.jpg")
+				//- 	img(src="/media/featuredPages/lookbook/demoCollection/4.jpg")
+				//- .featuredPages-col-4
+				//- 	img(src="/media/featuredPages/lookbook/demoCollection/4.jpg")
+				//- 	img(src="/media/featuredPages/lookbook/demoCollection/3.jpg")
+				//- .featuredPages-col-4
+				//- 	img(src="/media/featuredPages/lookbook/demoCollection/2.jpg")
+				//- 	img(src="/media/featuredPages/lookbook/demoCollection/1.jpg")
+			br
+			br
+			include ../includes/commonPartials/footer.pug
+
+		//- Homebrewed scripts
+		script(src="/javascripts/topnavStyle.js")

@@ -1,0 +1,21 @@
+html
+	include includes/head.pug
+	body
+		include includes/commonPartials/navbar.pug
+		#belowTopnavContent
+			br
+			.widthRestriction
+				.productPageCol-2
+					include includes/productPartials/vrRender.pug
+					br
+					br
+					include includes/productPartials/gallery.pug
+				.productPageCol-2.productDescription
+					include includes/productPartials/productDescription.pug
+					include includes/productPartials/gallery.pug					
+			br
+			br
+			include includes/commonPartials/footer.pug
+		
+		//- Homebrewed scripts
+		script(src="/javascripts/topnavStyle.js")

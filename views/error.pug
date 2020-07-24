@@ -1,0 +1,22 @@
+html
+	include includes/head.pug
+	body
+		include includes/commonPartials/navbar.pug
+		#belowTopnavContent
+			.widthRestriction.center
+				br
+				br
+				br
+				br
+				h1 You seem to be lost
+				h3 
+					| Allow us to lead you back 
+					a(href='/') Home
+				br
+				br
+				br
+				br
+			include includes/commonPartials/footer.pug
+
+		//- Homebrewed scripts
+		script(src="/javascripts/topnavStyle.js")

@@ -1,0 +1,27 @@
+{
+    "test": {
+    	"title": "Success",
+    	"product": {
+    		"name": "Wick3D Night Hoodie",
+    		"price": 39393
+    	},
+    	"designer": {
+    		"name": "Akshaj Sharma",
+    		"url": "javascript:void(0)"
+    	},
+    	"content": {
+    		"para1": "Part of the BLVCK02 Collection, the 'Bold Stripe Hoodie' features a unique extended stripe across the chest/arms with the Blvck logo printed across the sleeve/chest for a minimalist, streetwear look.",
+    		"para2": "Made from luxurious 100% Terry Cotton, all our hoodies are super soft to the touch and perfect for everyday wear.",
+    		"para3": "Unisex fit. Fits regular size for men and oversized for women.",
+    		"para4": "",
+    		"para5": "",
+    		"snapchatTryURL": "#",
+    		"instagramTryURL": "#",
+    		"copyLinkURL": "#",
+    		"snapchatShareURL": "#",
+    		"instagramShareUR": "#",
+    		"whatsappShareURL": "#"
+
+    	}
+    }
+}

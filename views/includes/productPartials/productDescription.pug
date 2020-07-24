@@ -1,0 +1,44 @@
+.widthRestriction
+	h1=product.name
+	h5 
+		| Designed by 
+		a(href=designer.url).bold=designer.name
+	br
+	p=content.para1
+	p=content.para2
+	p=content.para3
+	p=content.para4	
+	p=content.para5
+	hr
+	.center
+		h4 Wanna check out how it looks on you?
+		br
+		a(href=content.snapchatTryURL)
+			button
+				i.fab.fa-snapchat
+				|  Try on Snapchat
+		a(href=content.instagramTryURL)
+			button
+				i.fab.fa-instagram
+				|  Try on Instagram
+	hr
+	.center
+		button.snipcart-add-item()
+			//- i.fab.fa-instagram
+			|  Get it now for $#{product.price}
+		a(href="#" style="display: inline-block").bold Sizing Guide
+	hr
+	.center
+		h4
+			i.fa.fa-share(style="rfs(1.5rem)")
+			|  Share this find with others
+		br
+		.shareIconsContainer
+			a(href=content.copyLinkURL)
+				i.fa.fa-link
+			a(href=content.snapchatShareURL)
+				i.fab.fa-snapchat
+			a(href=content.instagramShareUR)
+				i.fab.fa-instagram
+			a(href=content.whatsappShareURL)
+				i.fab.fa-whatsapp

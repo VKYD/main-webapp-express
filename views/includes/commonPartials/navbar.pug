@@ -1,0 +1,120 @@
+nav
+	.topnavBar#topnavBar
+		.widthRestriction
+			.menuIcon#menuIcon(onclick="openSlider(sidenav)")
+				.menuIconBar#menuIconBar-1
+				.menuIconBar#menuIconBar-2
+				.menuIconBar#menuIconBar-3
+			.cartIcon#cartIcon(onclick="openSlider(cart)")
+				i.fa.fa-shopping-cart
+			a(href="/").logoFont#logo 
+				include logo.pug
+	
+	.sidenav#sidenav
+		.closeIcon#closeIcon-1(onclick="closeSlider(sidenav)")
+			.closeIconBar#closeIconBar-1
+			.closeIconBar#closeIconBar-2
+		br
+		br
+		#sidenavContent
+			a(href="/#newArrivals")
+				h3 New arrivals
+			a(href="/ourStory")
+				h3 Our story
+			a(href="/lookbook")
+				h3 Lookbook
+			a(href="/wallpapers")
+				h3 Wallpapers
+			br
+			a(href="/login")
+				button.roundedButton Log in
+			br
+			br
+			br
+			.socialIcons
+				a(href="https://www.instagram.com/vkydclothing/")
+					i.fab.fa-instagram
+				a(href="#")
+					i.fab.fa-snapchat
+				a(href="#")
+					i.fab.fa-facebook
+				a(href="#")
+					i.fab.fa-tiktok
+				a(href="#")
+					i.fab.fa-spotify
+				a(href="mailto: vkydclothing@gmail.com")
+					i.fa.fa-envelope
+
+	.cart#cart
+		.closeIcon#closeIcon-2(onclick="closeSlider(cart)")
+			.closeIconBar#closeIconBar-1
+			.closeIconBar#closeIconBar-2
+		.widthRestriction
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			.productsInCartSection
+			.checkoutSection
+				a(href="#")
+					button Check out
+
+	script.
+		window.onload = function startScript() {
+			var topnav = document.getElementById('topnavBar');
+			var menuIcon = document.getElementById('menuIcon');
+			var cartIcon = document.getElementById('cartIcon');
+			var logo = document.getElementById('logo');
+
+			var closeIcon1 = document.getElementById('closeIcon-1');
+			var closeIcon2 = document.getElementById('closeIcon-2');
+
+			var sidenavContent = document.getElementById('sidenavContent');
+
+			menuIcon.style.paddingTop = ((topnavBar.offsetHeight - 20) - menuIcon.offsetHeight)/2;
+
+			cartIcon.style.paddingTop = ((topnavBar.offsetHeight - 20) - cartIcon.offsetHeight)/2;
+
+			closeIcon1.style.paddingTop = (topnavBar.offsetHeight - closeIcon1.offsetHeight)/2;
+			closeIcon1.style.paddingLeft = screen.width * 0.05;
+
+
+			closeIcon2.style.paddingTop = (topnavBar.offsetHeight - closeIcon2.offsetHeight)/2;
+			closeIcon2.style.paddingRight = screen.width * 0.05;
+
+			if (screen.width < 600) {
+				sidenavContent.style.textAlign = "center";
+			}
+			else {
+				sidenavContent.style.paddingLeft = screen.width * 0.05;
+			};
+
+		};
+		var sidenav = document.getElementById('sidenav');
+		var cart = document.getElementById('cart');
+
+		function openSlider(object) {
+			if (screen.width < 600) {
+				object.style.width = screen.width;
+			}
+			else {
+				object.style.width = 400;
+			};
+		}
+
+		function closeSlider(object) {
+			object.style.width = 0;
+		}
+		//- document.querySelectorAll('#main-menu li a');
