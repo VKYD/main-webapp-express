@@ -5,7 +5,7 @@ nav
 				.menuIconBar#menuIconBar-1
 				.menuIconBar#menuIconBar-2
 				.menuIconBar#menuIconBar-3
-			.cartIcon#cartIcon(onclick="openSlider(cart)")
+			a.cartIcon#cartIcon(href="#/cart")
 				i.fa.fa-shopping-cart
 			a(href="/").logoFont#logo 
 				include logo.pug
@@ -45,31 +45,31 @@ nav
 				a(href="mailto: vkydclothing@gmail.com")
 					i.fa.fa-envelope
 
-	.cart#cart
-		.closeIcon#closeIcon-2(onclick="closeSlider(cart)")
-			.closeIconBar#closeIconBar-1
-			.closeIconBar#closeIconBar-2
-		.widthRestriction
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			br
-			.productsInCartSection
-			.checkoutSection
-				a(href="#")
-					button Check out
+	//- .cart#cart
+	//- 	.closeIcon#closeIcon-2(onclick="closeSlider(cart)")
+	//- 		.closeIconBar#closeIconBar-1
+	//- 		.closeIconBar#closeIconBar-2
+	//- 	.widthRestriction
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		br
+	//- 		.productsInCartSection
+	//- 		.checkoutSection
+	//- 			a(href="#")
+	//- 				button Check out
 
 	script.
 		window.onload = function startScript() {
@@ -79,7 +79,7 @@ nav
 			var logo = document.getElementById('logo');
 
 			var closeIcon1 = document.getElementById('closeIcon-1');
-			var closeIcon2 = document.getElementById('closeIcon-2');
+			//- var closeIcon2 = document.getElementById('closeIcon-2');
 
 			var sidenavContent = document.getElementById('sidenavContent');
 
@@ -91,8 +91,8 @@ nav
 			closeIcon1.style.paddingLeft = screen.width * 0.05;
 
 
-			closeIcon2.style.paddingTop = (topnavBar.offsetHeight - closeIcon2.offsetHeight)/2;
-			closeIcon2.style.paddingRight = screen.width * 0.05;
+			//- closeIcon2.style.paddingTop = (topnavBar.offsetHeight - closeIcon2.offsetHeight)/2;
+			//- closeIcon2.style.paddingRight = screen.width * 0.05;
 
 			if (screen.width < 600) {
 				sidenavContent.style.textAlign = "center";
@@ -103,7 +103,7 @@ nav
 
 		};
 		var sidenav = document.getElementById('sidenav');
-		var cart = document.getElementById('cart');
+		//- var cart = document.getElementById('cart');
 
 		function openSlider(object) {
 			if (screen.width < 600) {

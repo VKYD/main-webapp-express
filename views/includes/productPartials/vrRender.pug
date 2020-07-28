@@ -1,6 +1,6 @@
 .productPageVRSliderSection
 	video#VRVideo
-		source(src=media.render)
+		source(src=("/media/products/"+product.id+"/render.mp4"))
 	input(type="range" min="0" max="100" value="0" step="5").VRSlider#VRSlider
 	script.
 		var VRVideo = document.getElementById("VRVideo");

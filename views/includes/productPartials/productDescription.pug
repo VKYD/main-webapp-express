@@ -23,8 +23,16 @@
 				|  Try on Instagram
 	hr
 	.center
-		button.snipcart-add-item()
-			//- i.fab.fa-instagram
+		button.snipcart-add-item(
+			data-item-id=product.id
+			data-item-price=product.price
+			data-item-url=("/product/"+product.id)
+			data-item-description=content.cartDescription
+			data-item-image=("/media/products/"+product.id+"/cart.jpg")
+			data-item-name=product.name
+			data-item-custom1-name="Size"
+			data-item-custom1-options=product.sizes
+			data-item-custom1-required="true")
 			|  Get it now for $#{product.price}
 		a(href="#" style="display: inline-block").bold Sizing Guide
 	hr

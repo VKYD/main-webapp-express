@@ -3,7 +3,8 @@
     	"title": "Success",
     	"product": {
     		"name": "Wick3D Night Hoodie",
-    		"price": 39393
+    		"price": 39393,
+            "sizes": "S | M | L"
     	},
     	"designer": {
     		"name": "Akshaj Sharma",
@@ -15,6 +16,7 @@
     		"para3": "Unisex fit. Fits regular size for men and oversized for women.",
     		"para4": "",
     		"para5": "",
+            "cartDescription": "Test",
     		"snapchatTryURL": "#",
     		"instagramTryURL": "#",
     		"copyLinkURL": "#",
