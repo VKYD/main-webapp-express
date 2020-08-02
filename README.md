@@ -1,5 +1,5 @@
 # VKYD Main Website
-> 🛠️ Under development
+> 🛠️ Under development, nodemon is currently implemented please note
 
 Before you begin, make sure you have the following installed on your laptop -
 * [Git](https://git-scm.com/downloads)
