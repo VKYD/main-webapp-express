@@ -31,7 +31,7 @@ router.get('/product/:id', function (req, res, next) {
 			instagramTryURL: products[id]["content"]["instagramTryURL"],
 			copyLinkURL: products[id]["content"]["copyLinkURL"],
 			snapchatShareURL: products[id]["content"]["snapchatShareURL"],
-			instagramShareUR: products[id]["content"]["instagramShareUR"],
+			// instagramShareUR: products[id]["content"]["instagramShareUR"],
 			whatsappShareURL: products[id]["content"]["whatsappShareURL"]
 		}
 	});
