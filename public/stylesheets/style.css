@@ -123,6 +123,7 @@ nav {
   padding-bottom: 10px;
   text-align: center;
   z-index: 1;
+  box-shadow: 7px 7px 21px -10px #000;
 }
 .menuIcon {
   width: 35px;
@@ -479,13 +480,14 @@ footer input {
   transform: translate(-50%, -50%);
 }
 .statement {
-  background-color: #ddd;
+  background-color: #ffedd6;
+  color: #371d10;
 }
 .statement button {
   padding: 5px 10px;
-  color: #000;
+  color: #371d10;
   background-color: rgba(0,0,0,0);
-  border: 2px solid #000;
+  border: 2px solid #371d10;
   font-family: Poppins;
   font-weight: 600;
   font-size: 1rem;
@@ -495,8 +497,8 @@ footer input {
   transition: 0.2s;
 }
 .statement button:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: #371d10;
+  color: #ffedd6;
 }
 .instagramFeedEmbed {
   background-color: #000;
