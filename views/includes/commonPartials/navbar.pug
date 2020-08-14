@@ -25,10 +25,8 @@ nav
 				h3 Lookbook
 			a(href="/wallpapers")
 				h3 Wallpapers
-			br
-			a(href="/login")
-				button.roundedButton Log in
-			br
+			a(href="/team")
+				h3 The Team
 			br
 			br
 			.socialIcons
@@ -44,33 +42,6 @@ nav
 					i.fab.fa-spotify
 				a(href="mailto: vkydclothing@gmail.com")
 					i.fa.fa-envelope
-
-	//- .cart#cart
-	//- 	.closeIcon#closeIcon-2(onclick="closeSlider(cart)")
-	//- 		.closeIconBar#closeIconBar-1
-	//- 		.closeIconBar#closeIconBar-2
-	//- 	.widthRestriction
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		br
-	//- 		.productsInCartSection
-	//- 		.checkoutSection
-	//- 			a(href="#")
-	//- 				button Check out
-
 	script.
 		window.onload = function startScript() {
 			var topnav = document.getElementById('topnavBar');
@@ -79,20 +50,15 @@ nav
 			var logo = document.getElementById('logo');
 
 			var closeIcon1 = document.getElementById('closeIcon-1');
-			//- var closeIcon2 = document.getElementById('closeIcon-2');
 
 			var sidenavContent = document.getElementById('sidenavContent');
 
 			menuIcon.style.paddingTop = ((topnavBar.offsetHeight - 20) - menuIcon.offsetHeight)/2;
 
-			cartIcon.style.paddingTop = ((topnavBar.offsetHeight - 20) - cartIcon.offsetHeight)/2;
+			cartIcon.style.paddingTop = ((topnavBar.offsetHeight - 10) - cartIcon.offsetHeight)/2;
 
 			closeIcon1.style.paddingTop = (topnavBar.offsetHeight - closeIcon1.offsetHeight)/2;
 			closeIcon1.style.paddingLeft = screen.width * 0.05;
-
-
-			//- closeIcon2.style.paddingTop = (topnavBar.offsetHeight - closeIcon2.offsetHeight)/2;
-			//- closeIcon2.style.paddingRight = screen.width * 0.05;
 
 			if (screen.width < 600) {
 				sidenavContent.style.textAlign = "center";
@@ -103,7 +69,6 @@ nav
 
 		};
 		var sidenav = document.getElementById('sidenav');
-		//- var cart = document.getElementById('cart');
 
 		function openSlider(object) {
 			if (screen.width < 600) {
@@ -117,4 +82,3 @@ nav
 		function closeSlider(object) {
 			object.style.width = 0;
 		}
-		//- document.querySelectorAll('#main-menu li a');

@@ -1,8 +1,25 @@
 html
 	include includes/head.pug
-	body
+	head
+		script(src="/javascripts/juicer.js" type="text/javascript")
+		link(href="/stylesheets/juicer.css" media="all" rel="stylesheet" type="text/css")
+	body.index
 		include includes/commonPartials/navbar.pug
 		#belowTopnavContent
+			include includes/indexPartials/banner.pug
+			include includes/indexPartials/newArrivals.pug
+			br
+			br
+			br
+			include includes/indexPartials/featuredSections.pug
+			//- br
+			//- br
+			include includes/indexPartials/statement.pug
+			//- br
+			//- br
+			include includes/indexPartials/instagramFeedEmbed.pug
+			//- br
+			//- br
 			include includes/commonPartials/footer.pug
 
 		//- Homebrewed scripts

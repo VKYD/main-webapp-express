@@ -1,0 +1,20 @@
+section.banner#banner
+	.widthRestriction
+		.bannerContent.center
+			h1 Something idk What thO?
+			a(href="javascript:void(0)")
+				button Buy noW?
+			a(href="javascript:void(0)")
+				button Buy noW?
+	script.
+		var banner = document.getElementById('banner');
+		var i = 1;
+		showSlides();
+		function showSlides() {
+			banner.style.backgroundImage = 'url("/media/carousel/' + i +'.png")';
+			i++;
+			if (i > 8) {
+				i = 1;
+			}
+			setTimeout(showSlides, 2000);
+		}

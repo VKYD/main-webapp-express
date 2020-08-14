@@ -367,28 +367,145 @@ footer input {
   font-family: Poppins;
   color: #fff;
 }
-.login button {
-  padding-top: 10px;
-  padding-right: 15px;
-  padding-bottom: 10px;
-  padding-left: 15px;
+.banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+#banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bannerContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.bannerContent button {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.6);
+  border: 2px solid #fff;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: calc(1.255rem + 0.06vw);
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+@media (min-width: 1200px) {
+  .bannerContent button {
+    font-size: 1.3rem;
+  }
+}
+.bannerContent button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.newArrivals .row {
+  width: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.newArrivals .row::-webkit-scrollbar {
+  background-color: rgba(187,187,187,0.733);
+  transition: 0.2s;
+}
+.newArrivals .row::-webkit-scrollbar-thumb {
+  background-color: #555;
+  cursor: pointer;
+}
+.newArrivals .row .card {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+  padding: 15px 15px;
+  transition: 0.2s;
+  border: 3px solid rgba(0,0,0,0);
+  margin-bottom: 30px;
+}
+.newArrivals .row .card:hover {
+  border: 3px solid #000;
+}
+.newArrivals .row .card h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.newArrivals .row .card button {
+  padding: 10px 10px;
   background-color: #fff;
   border: 2px solid #000;
   font-family: Poppins;
   font-weight: 600;
   font-size: 0.8rem;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 15px;
   transition: 0.2s;
-  width: 100%;
-  max-width: 300px;
 }
-.login button:hover {
+.newArrivals .row .card button:hover {
   background-color: #000;
   color: #fff;
+}
+.index .col-2 {
+  width: 50%;
+  display: inline-block;
+}
+@media screen and (max-width: 800px) {
+  .index .col-2 {
+    width: 100%;
+  }
+}
+.featuredSections .container {
+  position: relative;
+  text-align: center;
+}
+.featuredSections img {
+  filter: none;
+  transition: 0.2s;
+}
+.featuredSections img:hover {
+  filter: brightness(50%);
+}
+.featuredSections .container h2 {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.statement {
+  background-color: #ddd;
+}
+.statement button {
+  padding: 5px 10px;
+  color: #000;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid #000;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: 0.2s;
+}
+.statement button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.instagramFeedEmbed {
+  background-color: #000;
+}
+.feed-item {
+  transition: 0.2s;
+}
+.feed-item:hover {
+  filter: brightness(50%);
 }
 .productPageCol-2 {
   width: 50%;
@@ -456,10 +573,7 @@ footer input {
   font-weight: 400;
 }
 .productDescription button {
-  padding-top: 10px;
-  padding-right: 15px;
-  padding-bottom: 10px;
-  padding-left: 15px;
+  padding: 10px 15px;
   background-color: #fff;
   border: 2px solid #000;
   font-family: Poppins;
@@ -487,19 +601,20 @@ footer input {
 .productDescription a:hover {
   color: #555;
 }
+.shareIconsContainer a button {
+  padding: 10px 0px;
+  margin-top: 0;
+}
 .shareIconsContainer i {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.295rem + 0.54vw);
   margin-right: 15px;
   margin-left: 15px;
   transition: 0.2s;
 }
 @media (min-width: 1200px) {
   .shareIconsContainer i {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
-}
-.shareIconsContainer i:hover {
-  color: #555;
 }
 .productDescription hr {
   margin-bottom: 30px;

@@ -8,7 +8,7 @@ var products = JSON.parse(fs.readFileSync('./data/products.json', 'utf8'));
 router.get('/product/:id', function (req, res, next) {
 	var id = req.params.id; //Unique product ID
 	id = id.toString();
-	res.render('productTemplate', {
+	res.render('product', {
 		title: products[id]["title"] + " | VKYD",
 		product: {
 			id: id,
